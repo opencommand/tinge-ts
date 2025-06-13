@@ -1,12 +1,14 @@
 {
     "compilerOptions": {
-        "target": "ES2018",
-        "module": "commonjs",
-        "declaration": true,
-        "outDir": "./dist/cjs",
-        "strict": true,
+        "outDir": "dist",
+        "rootDir": "src",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "target": "es2019",
         "esModuleInterop": true,
-        "skipLibCheck": true
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "declaration": true,
     },
     "include": [
         "src"

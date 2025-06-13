@@ -1,4 +1,4 @@
-import { bold, gray, green, italic, red, yellow } from "./styles"
+import { black, blue, bold, gray, green, grey, italic, magenta, red, white, yellow } from "./styles"
 
 type ChalkStyle = (input: string) => string
 
@@ -57,7 +57,27 @@ export class StyledText {
     }
 
     public Grey(text: string): this {
+        return this.write(grey, text)
+    }
+
+    public Gray(text: string): this {
         return this.write(gray, text)
+    }
+
+    public Blue(text: string): this {
+        return this.write(blue, text)
+    }
+
+    public Magenta(text: string): this {
+        return this.write(magenta, text)
+    }
+
+    public White(text: string): this {
+        return this.write(white, text)
+    }
+
+    public Black(text: string): this {
+        return this.write(black, text)
     }
 
     public Yellow(text: string): this {
