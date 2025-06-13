@@ -1,0 +1,34 @@
+{
+    "name": "opencmd-tinge",
+    "version": "0.0.12",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc -p tsconfig.json && tsc -p tsconfig.esm.json && node scripts/rename.js"
+    },
+    "keywords": [
+        "terminal",
+        "styled",
+        "text",
+        "cli"
+    ],
+    "author": "OpenCmd",
+    "license": "MIT",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "exports": {
+        ".": {
+            "import": "./dist/esm/index.js",
+            "require": "./dist/cjs/index.js"
+        }
+    },
+    "dependencies": {
+        "chalk": "^4.1.2"
+    },
+    "devDependencies": {
+        "chalk": "^4.1.2",
+        "typescript": "^5.0.0"
+    },
+    "packageManager": "pnpm@9.15.2+sha512.93e57b0126f0df74ce6bff29680394c0ba54ec47246b9cf321f0121d8d9bb03f750a705f24edc3c1180853afd7c2c3b94196d0a3d53d3e069d9e2793ef11f321"
+}
